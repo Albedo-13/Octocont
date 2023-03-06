@@ -7,31 +7,21 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, './src/pages/main/js/index'),
+    main: path.resolve(__dirname, './src/pages/main/js/index.js'),
   },
   output: {
     path: path.join(__dirname, './dist/'),
     filename: 'pages/[name]/js/index.js',
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.js'],
   },
   module: {
     rules: [
       // {
-      //   test: /\.js|ts$/,
-      //   exclude: /node_modules/,
-      //   use: 'ts-loader',
+      //   test: /\.css$/i,
+      //   use: ['css-loader'],
       // },
-      {
-        test: /\.js|ts$/,
-        exclude: /node_modules/,
-        use: [{ loader: 'babel-loader' }, { loader: 'ts-loader' }],
-      },
-      {
-        test: /\.css$/i,
-        use: ['css-loader'],
-      },
     ],
   },
   plugins: [
@@ -53,6 +43,6 @@ module.exports = {
         },
       },
     }),
-    new EslingPlugin({ extensions: 'ts' }),
   ],
+  watch: true,
 };
