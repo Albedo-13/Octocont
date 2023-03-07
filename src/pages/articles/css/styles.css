@@ -82,6 +82,11 @@
   width: 100%;
 }
 
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 24px;
+}
+
 ul {
   margin: 0;
   padding: 0;

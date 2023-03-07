@@ -1,3 +1,19 @@
+@import '../../components/scss/variables';
+@import '../../components/scss/mixins';
+
+@import '../../components/scss/header';
+@import 'blocks/_articles';
+@import 'blocks/_features';
+@import 'blocks/_partners';
+@import 'blocks/_pricing';
+@import 'blocks/_order';
+@import 'blocks/_footer';
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 24px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -12,17 +28,15 @@ h6 {
   margin: 0;
 }
 
+h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  line-height: 40px;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
 }
-
-@import '../../components/scss/header';
-@import '../../components/scss/mixins';
-@import '../../components/scss/variables';
-@import 'blocks/_articles';
-@import 'blocks/_features';
-@import 'blocks/_partners';
-@import 'blocks/_pricing';
-@import 'blocks/_order';
-@import 'blocks/_footer';
