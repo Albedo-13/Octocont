@@ -29,9 +29,10 @@ h2 {
   margin: 0 auto;
 }
 
-@import '../../components/scss/header';
-@import '../../components/scss/mixins';
 @import '../../components/scss/variables';
+@import '../../components/scss/mixins';
+
+@import '../../components/scss/header';
 @import 'blocks/_articles';
 @import 'blocks/_features';
 @import 'blocks/_partners';
