@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-let htmlPageNames = ['main', 'about'];
+let htmlPageNames = ['main', 'about', 'articles'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: path.resolve(__dirname, `./src/pages/${name}/index.html`),
@@ -21,6 +21,7 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/pages/main/js/index.js'),
     about: path.resolve(__dirname, './src/pages/about/js/index.js'),
+    articles: path.resolve(__dirname, './src/pages/articles/js/index.js'),
   },
   output: {
     path: path.join(__dirname, './dist/'),
