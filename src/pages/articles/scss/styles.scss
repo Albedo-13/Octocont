@@ -18,11 +18,13 @@ ul {
 
 .articles{
   @include flex(center, column);
+  margin-top: 2%;
   .articles-container{
     width: 80%;
   }
   .article-block{
     @include flex(space-between, row);
+    margin-top: 2%;
   }
 }
 
