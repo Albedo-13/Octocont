@@ -1,4 +1,8 @@
 .articles {
+  &__header {
+    text-align: center;
+  }
+
   &-carousel {
     display: flex;
     justify-content: space-between;

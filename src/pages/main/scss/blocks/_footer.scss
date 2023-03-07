@@ -1,0 +1,10 @@
+.footer {
+  background-color: $COLOR_GRAY;
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+  }
+}

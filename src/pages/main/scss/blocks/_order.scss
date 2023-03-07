@@ -1,0 +1,14 @@
+.order {
+  padding-bottom: 30px;
+  
+  &-form {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    min-width: 250px;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
