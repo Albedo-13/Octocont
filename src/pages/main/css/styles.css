@@ -1,3 +1,8 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 24px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -10,6 +15,13 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -114,8 +126,11 @@ h6 {
 .features-item {
   background-color: #ffffff;
   margin: 15px;
-  width: calc(50% - 30px);
-  min-height: 100px;
+  width: calc(50% - 38px);
+  min-height: 150px;
+  border-radius: 10px;
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,15 +140,19 @@ h6 {
   margin-right: 15px;
 }
 .features-item__logo img {
-  width: 65px;
-  height: 65px;
+  width: 85px;
+  height: 85px;
 }
 .features-item__content {
   margin-top: 10px;
 }
 .features-item__title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.features-item__title::after {
+  content: "";
 }
 
 .partners {
