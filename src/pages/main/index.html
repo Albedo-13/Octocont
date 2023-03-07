@@ -203,24 +203,8 @@
               <span>25.99 $</span>
             </div>
           </div>
+          <button data-open-modal="" class="pricing__submit" type="submit" value="Order now">ORDER NOW</button>
         </div>
-      </div>
-    </section>
-    <section class="order">
-      <div class="container">
-        <h2 class="pricing__header">Order now</h2>
-        <form class="order-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdovzrdl" method="post">
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="Describe what you want here" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input type="submit" value="Submit">
-        </form>
       </div>
     </section>
   </main>
@@ -234,6 +218,25 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal" style="display: none;">
+    <div class="order-dialog">
+        <h2 class="order-dialog__header">We will contact you as soon as possible!</h2>
+        <form class="order-dialog-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdovzrdl" method="post">
+          <div data-close-modal="" class="order-dialog__close">×</div>
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input class="order-dialog-form__input" type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input class="order-dialog-form__input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Message</label>
+            <textarea class="order-dialog-form__input order-dialog-form__input_big" rows="5" name="message" id="message" placeholder="Describe what you want here" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input class="order-dialog__submit" type="submit" value="Order now">
+        </form>
+    </div>
+  </div>
 
   <script src="js/index.js" type="module"></script>
 </body>
