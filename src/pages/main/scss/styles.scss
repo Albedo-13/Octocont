@@ -1,3 +1,14 @@
+@import '../../components/scss/variables';
+@import '../../components/scss/mixins';
+
+@import '../../components/scss/header';
+@import 'blocks/_articles';
+@import 'blocks/_features';
+@import 'blocks/_partners';
+@import 'blocks/_pricing';
+@import 'blocks/_order';
+@import 'blocks/_footer';
+
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 24px;
@@ -28,14 +39,3 @@ h2 {
   max-width: 80%;
   margin: 0 auto;
 }
-
-@import '../../components/scss/variables';
-@import '../../components/scss/mixins';
-
-@import '../../components/scss/header';
-@import 'blocks/_articles';
-@import 'blocks/_features';
-@import 'blocks/_partners';
-@import 'blocks/_pricing';
-@import 'blocks/_order';
-@import 'blocks/_footer';
