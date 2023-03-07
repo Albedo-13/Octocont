@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#">
+            <img src="../../assets/img/kitten.jpg" alt="octocont logo">
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header-list">
+            <li class="header-list-item"><a href="#">Articles</a></li>
+            <li class="header-list-item"><a href="#">Link building</a></li>
+            <li class="header-list-item"><a href="#">Research</a></li>
+            <li class="header-list-item"><a href="#">Development</a></li>
+            <li class="header-list-item"><a href="#">Design</a></li>
+            <li class="header-list-item"><a href="#">About us</a></li>
+            <li class="header-list-item"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="articles-header">
+      <nav class="articles-header__nav">
+        <ul class="articles-header-list">
+          <li class="articles-header-list-item"><a href="#">Posting</a></li>
+          <li class="articles-header-list-item"><a href="#">Slots</a></li>
+          <li class="articles-header-list-item"><a href="#">Casinos</a></li>
+          <li class="articles-header-list-item"><a href="#">Providers</a></li>
+          <li class="articles-header-list-item"><a href="#">Others</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="articles">
+      <div class="articles-container" id="articles-container">
+
+      </div>
+      <div class="pagination">
+        <button class="pagination__button">Prev</button>
+        <button class="pagination__button">1</button>
+        <button class="pagination__button">2</button>
+        <button class="pagination__button">3</button>
+        <button class="pagination__button">4</button>
+        <button class="pagination__button">5</button>
+        <button class="pagination__button">6</button>
+        <button class="pagination__button">7</button>
+        <button class="pagination__button">Next</button>
+      </div>
+    </section>
+  </main>
+  <template id="article">
+    <div class="article-block">
+      <div class="article__img-container">
+        <img src="../../assets/img/kitten.jpg" alt="">
+      </div>
+      <div class="article__middle">
+        <div class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fuga</div>
+        <div class="line"></div>
+        <div class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fuga</div>
+      </div>
+      <button class="article__button">Open</button>
+    </div>
+  </template>
+  <footer>
+
+  </footer>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

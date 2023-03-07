@@ -17,9 +17,9 @@ h6 {
   margin: 0 auto;
 }
 
-@import 'base/_variables';
-
-@import 'blocks/_header';
+@import '../../components/scss/header';
+@import '../../components/scss/mixins';
+@import '../../components/scss/variables';
 @import 'blocks/_articles';
 @import 'blocks/_features';
 @import 'blocks/_partners';

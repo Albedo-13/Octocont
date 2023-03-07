@@ -1,0 +1,34 @@
+
+@import '../../components/scss/variables';
+@import '../../components/scss/header';
+@import '../../components/scss/mixins';
+@import '../../components/scss/common';
+@import 'blocks/_articles-header';
+@import 'blocks/_article-item';
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.articles{
+  @include flex(center, column);
+  margin-top: 2%;
+  .articles-container{
+    width: 80%;
+  }
+  .article-block{
+    @include flex(space-between, row);
+    margin-top: 2%;
+  }
+}
+
+.pagination{
+  margin-top: 4%;
+}
+
