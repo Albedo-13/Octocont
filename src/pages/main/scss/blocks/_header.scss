@@ -1,0 +1,32 @@
+.header {
+  background-color: $COLOR_GRAY;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 75px;
+    width: auto;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    &-item {
+      margin: 0 15px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

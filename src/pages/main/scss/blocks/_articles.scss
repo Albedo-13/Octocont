@@ -1,0 +1,28 @@
+.articles {
+  &-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      background-color: $COLOR_GRAY;
+      margin: 15px;
+      padding: 15px;
+      max-width: 300px;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__btn {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    &__next,
+    &__prev {
+      height: 45px;
+    }
+  }
+}
