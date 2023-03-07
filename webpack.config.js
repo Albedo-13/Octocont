@@ -5,9 +5,22 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+let htmlPageNames = ['main', 'about'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, `./src/pages/${name}/index.html`),
+    filename: `./pages/${name}/index.html`,
+    inject: false,
+  });
+});
+let multipleCopyPluginPatterns = htmlPageNames.map(name => {
+  return { from: `./src/pages/${name}/css/styles.min.css`, to: `./pages/${name}/css/` };
+});
+
 module.exports = {
   entry: {
     main: path.resolve(__dirname, './src/pages/main/js/index.js'),
+    about: path.resolve(__dirname, './src/pages/about/js/index.js'),
   },
   output: {
     path: path.join(__dirname, './dist/'),
@@ -18,22 +31,14 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.css$/i,
-      //   use: ['css-loader'],
-      // },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/pages/main/index.html'),
-      filename: './pages/main/index.html',
-      inject: false,
-    }),
+    ...multipleHtmlPlugins,
     new CopyPlugin({
       patterns: [
         { from: './src/assets/', to: './assets/' },
-        { from: './src/pages/main/css/styles.min.css', to: './pages/main/css/' },
+        ...multipleCopyPluginPatterns,
       ],
     }),
     new FileManagerPlugin({
